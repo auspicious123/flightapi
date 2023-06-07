@@ -3,8 +3,16 @@ const express = require("express");
 //routes
 const flightRoutes = require("./routes/flights.route");
 const { getFlightsPrice } =require("./controllers/flights.controller");
-
-
+/*
+ source ar destination dalne pe flight name aur uska price aana chahiye
+curl --location --request GET 'http://localhost:8000/getflights' \
+--header 'Content-Type: application/json' \
+--data '{
+  "source": "DEL",
+  "destination": "PAT",
+  "date": "2023-07-10"
+}'
+*/
 // init express app
 const app = express();
 
