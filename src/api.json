@@ -1,0 +1,35 @@
+{
+    "source": "SFO",
+    "destination": "LAX",
+    "flights": [
+      {
+        "flight_number": "ABC123",
+        "airline": "Example Airlines",
+        "departure_time": "2023-07-05T08:00:00",
+        "arrival_time": "2023-07-05T09:30:00",
+        "price": 250.00
+      },
+      {
+        "flight_number": "DEF456",
+        "airline": "Sample Airways",
+        "departure_time": "2023-07-05T10:00:00",
+        "arrival_time": "2023-07-05T11:30:00",
+        "price": 210.50
+      },
+      {
+        "flight_number": "GHI789",
+        "airline": "Test Flights",
+        "departure_time": "2023-07-05T12:00:00",
+        "arrival_time": "2023-07-05T13:30:00",
+        "price": 275.75
+      },
+      {
+        "flight_number": "JKL012",
+        "airline": "Flight Express",
+        "departure_time": "2023-07-05T14:00:00",
+        "arrival_time": "2023-07-05T15:30:00",
+        "price": 199.99
+      }
+    ]
+  }
+  
