@@ -2,24 +2,16 @@ const express = require("express");
 
 //routes
 const flightRoutes = require("./routes/flights.route");
-const { getFlightsPrice } =require("./controllers/flights.controller");
-/*
- source ar destination dalne pe flight name aur uska price aana chahiye
-curl --location --request GET 'http://localhost:8000/getflights' \
---header 'Content-Type: application/json' \
---data '{
-  "source": "DEL",
-  "destination": "PAT",
-  "date": "2023-07-10"
-}'
-*/
+// const { getFlightsPrice } =require("./controllers/flights.controller");
+
 // init express app
 const app = express();
 
 //middlewares
 app.use(express.json());
 
-const PORT=8000;
+// const PORT=8000;
+const { PORT } = require("./config");
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -28,7 +20,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/getflights", getFlightsPrice);
+app.use("/flights", flightRoutes);
 
 async function main() {
   try {
